@@ -1,0 +1,26 @@
+  <div class="nav">
+    <div class="container">
+      <div class="col-md-3">
+        <div class="logo">
+          <a href="">
+            <%= image_tag "logo.svg", class: "img-responsive" %>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-5">
+          <ul class="list-inline">
+            <li class="menu-item"><%= link_to "Home", root_path %></li>
+            <li class="menu-item"><%= link_to "About us", "https://naprok.com/#2" %></li>
+            <li class="menu-item"><%= link_to "Contact us", "https://naprok.com/#5" %></li>
+          </ul>
+      </div>
+      <div class="col-md-4">
+        <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+          <%= button_tag(type: "submit") do %>
+            <i class="fas fa-search" aria-hidden="true"></i>
+          <% end %>
+        <% end %>
+			</div>
+     </div>
+  </div>

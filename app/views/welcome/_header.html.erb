@@ -1,0 +1,29 @@
+<div class="header">
+  <div class="col-5 logo-header " >
+    <img class="logo-size" src=<%= asset_url("logo-header.png")%> alt="Naprok logo" ></img>
+  </div>
+  <div class="col-5 menu-header">
+    <div class="nav-panel">
+      <a href="#1">HOME</a>
+      <a href="#2">ABOUT US</a>
+      <a href="#3">ADVANTAGES</a>
+      <a href="#4">SCREENING</a>
+      <a href="#5">CONTACT US</a>
+    </div>
+    <div class="butt-mobile">
+      <input type="checkbox" id="m1" class="hidden-menu-ticker">
+      <label class="btn-menu" for="m1">
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+      </label>
+      <ul class="hidden-menu">
+        <li><a href="#1" onclick="hideBurgerMenu()">HOME </a></li>
+        <li><a href="#2" onclick="hideBurgerMenu()">ABOUT US</a></li>
+        <li><a href="#3" onclick="hideBurgerMenu()">ADVANTAGES</a></li>
+        <li><a href="#4" onclick="hideBurgerMenu()">SCREENING</a></li>
+        <li><a href="#5" onclick="hideBurgerMenu()">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

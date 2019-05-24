@@ -1,0 +1,44 @@
+<% content_for :head do %>
+  <%= tag :meta, property:"og:type", content:'website' %>
+  <%= tag :meta, property:"og:title", content: @post.title %>
+  <%= tag :meta, property:"og:image", content: request.protocol + request.host_with_port + image_path( @post.image.url) %>
+  <%= tag :meta, property: "twitter:card", content: "summary" %>
+  <%= tag :meta, property: "twitter:title", content: @post.title %>
+  <%= tag :meta, property:"twitter:image", content: request.protocol + request.host_with_port + image_path( @post.image.url) %>
+  <script>
+    document.querySelector('script[type="application/ld+json"]').remove();
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Article",
+      "name" : "<%= @post.title %>"
+      "author" : {
+        "@type" : "Person",
+        "name" : "<%= @post.author.name %>"
+      },
+      "datePublished" : "<%= @post.created_at.strftime("%Y-%m-%d") %>",
+      "image" : "https://naprok.com/blog/<%= @post.image.url %>",
+      "articleSection" : "Project Management",
+      "articleBody" : "<%= @post.body.html_safe %>",
+      "url" : "https://naprok.com/blog/<%= url_for(@post) %>"
+    }
+  </script>
+<% end %>
+<div class="post-photo" style='background: url("<%= @post.image.url %>");background-repeat:repeat-x;background-position: top center;background-attachment: fixed;background-size: cover;'>
+</div>
+<div class="container post-container">
+    <div class="col-md-12">
+      <h1><%= @post.title %></h1>
+      <p>
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <i><%= @post.author.name %></i>
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <i><%= @post.created_at.strftime("%B %d, %Y") %></i>
+      </p>
+      <p class="post-text"><%= @post.body.html_safe %></p>
+    </div>
+    <div class="comments">
+      <%= render 'comments' %>
+    </div>
+</div>

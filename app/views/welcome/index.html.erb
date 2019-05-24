@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://naprok.com"/>
+    <%= stylesheet_link_tag    'welcome' %>
+    <%= javascript_include_tag "application" %>
+    <link rel="manifest" href="<%= asset_path 'manifest.json' %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="vZ7lJn4Kym6P0whYfRhvfQXBuFaS8jOt1h_pGdR7dSo"/>
+    <title> IT Consultancy - Software Development Services - Naprok </title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <%= favicon_link_tag "favicon.ico", rel: "icon", type: "image/x-icon" %>
+    <meta name="description" content="Naprok is an IT consultancy offering the full-stack developers from outsourcing vendors to your in-house staff. Our team screens the engineers in advance to provide you with the remote staff who meet all expectation you're looking for"/>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104063296-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-104063296-1');
+    </script>
+    <meta name="google-site-verification" content="94QOPchLz_2YyUxZFaBBzV6AE1spacmYmknKSw2QoQQ" />
+   <!-- Microdata -->
+    <script type="application/ld+json"> { 
+      "@context" : "http://schema.org",
+      "@type" : "Organization", 
+      "name":"Naprok",
+      "url": "https://naprok.com",
+       "logo": "https://naprok.com/assets/logo-16a284ac1d45933e586955545cd089fde23ccd26ee9fd01d19a53ffaf0fa6aea.png",
+        "description": "Naprok is an IT consultancy offering the full-stack developers from outsourcing vendors to your in-house staff. Our team screens the engineers in advance to provide you with the remote staff who meet all expectation you're looking for",
+      "founder" : "Naprok",
+      "foundingDate" : "16112016",
+      "sameAs": [
+  "https://www.facebook.com/NaprokOutstaffing",
+  "https://www.linkedin.com/company/naprok-outstaffing-llc",
+  "https://twitter.com/NaprokOutstaff"
+  ],
+      "contactPoint" : {
+          "@type" : "ContactPoint",
+          "contactType" : "Customer Service",
+          "telephone" : "+380977535731",
+          "contactOption" : "TollFree",
+          "areaServed" : ["US","CA","AU"],
+          "availableLanguage" : "English",
+          "email" : "eugene@naprok.com"
+      }
+    }
+    </script>
+    
+ <!-- Open Graph tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Naprok is an IT consultancy offering the full-stack developers from outsourcing vendors to your in-house staff. Our team screens the engineers in advance to provide you with the remote staff who meet all expectation you're looking for" />
+    <meta name="twitter:tittle" content="Naprok | IT Consultancy & Providing of Software Development Services" />
+    <meta name="twitter:image" alt="Naprok development team" content="https://imgur.com/a/LjyttJQ">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:tittle" content="Naprok | IT Consultancy & Providing of Software Development Services">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Naprok is an IT consultancy offering the full-stack developers from outsourcing vendors to your in-house staff. Our team screens the engineers in advance to provide you with the remote staff who meet all expectation you're looking for">
+    <meta property="og:url" content="https://naprok.com/">
+    <meta property="og:site_name" content="Naprok">
+    <meta property="og:image" alt="Naprok development team" content="https://imgur.com/a/LjyttJQ">    
+    
+  </head>
+  <body class="background">
+    <div id="popup"></div>
+    <%= render 'header' %>
+    <%= render '1-search-for-dedicated-leading-team' %>
+    <%= render '2-why-we' %>
+    <%= render '3-how-we-work' %>
+    <%= render '4-screening-work' %>
+    <%= render '5-contact-us' %>
+    <%= render 'footer' %>
+  </body>
+</html>

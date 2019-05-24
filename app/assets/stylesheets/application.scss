@@ -1,0 +1,275 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= stub welcome
+ *= stub welcome-query
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body{
+  background-color: #F3FAFB !important;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+h1{
+  font-size: 40px !important;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.logo{
+  padding-top: 4px;
+}
+
+
+#posts{
+	margin-top: 50px;
+	margin-bottom: 50px;
+  min-height: 700px;
+}
+
+.post-photo{
+  min-height: 500px;
+  width: 100%;
+}
+
+.description{
+  padding: 30px;
+
+  h2{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.posts-item{
+  text-align: center;
+  background: #fff;
+-webkit-box-shadow: 0px 0px 16px -7px rgba(135,135,135,1);
+-moz-box-shadow: 0px 0px 16px -7px rgba(135,135,135,1);
+box-shadow: 0px 0px 16px -7px rgba(135,135,135,1);
+min-height: 600px;
+margin-bottom: 30px;
+z-index: 1000;
+  -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+
+  .post-preview{
+    min-height: 200px;
+    width: 100%;
+  }
+
+.about-post{
+  font-size: 14px;
+  color: #4B4C4D;
+}
+
+.posts-item:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.read-more{
+  padding: 16px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #003C54 !important;
+  font-size: 18px;
+  border: 3px solid #003C54;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.read-more:hover{
+  background: #003C54;
+  color: #fff !important;
+}
+
+.menu-item{
+  padding: 30px !important;
+
+  a{
+    color: #003C54;
+    font-weight: bold;
+  }
+
+  a:hover{
+    color: #0099AD;
+    text-decoration: none;
+  }
+}
+
+#search-form{
+  width: 100%;
+
+  input[type=text]{
+    border: 0;
+    height: 50px;
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    margin-right: -5px;
+    margin-top: 10px;
+  }
+
+  button{
+    border: 0;
+    padding: 15px;
+    background: #003C54;
+  }
+
+  .fas{
+    color: #fff;
+  }
+
+  button:hover{
+    background: #0099AD;
+  }
+}
+
+.pagination{
+  a, a:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  span{
+    background: #003C54;
+    padding: 10px;
+  }
+
+  .page.current {
+    color: #fff;
+    background: #0099AD;
+  }
+
+  span:hover{
+    background: #0099AD;
+  }
+}
+
+.footer{
+  background: #003C54;
+  display: flex;
+  justify-content: space-around;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2% 0;
+  }
+
+  .bottom-navs {
+    display:flex;
+    flex-direction: column;
+    line-height: 30px;
+    margin: 2% 0;
+
+    a {
+      color: #ffffff;
+    }
+  }
+
+  .media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      margin-right: 0;
+      color: black;
+      font-size: 15px;
+
+      .fa-stack-1x {
+        font-size: 1.3em;
+      }
+    }
+
+    .talk-button {
+      background-color: #00e3e6;
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 15px;
+      letter-spacing: 1.84px;
+      width: 85%;
+      height: 43px;
+      border-radius: 22px;
+      outline: none;
+      border: transparent 0px solid;
+      margin-top: 10%;
+    }
+
+    .talk-button:hover {
+      cursor: pointer;
+    }
+  }
+
+  h4{
+    color: #fff;
+  }
+
+  .contacts{
+    margin: 2% 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.23px;
+    line-height: 35px;
+  }
+
+  .cpr {
+    color: #c0c0c0;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2%;
+  }
+}
+
+.post-text{
+  font-size: 20px;
+}
+
+.avatar{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-top: -15%;
+  margin-bottom: 8%;
+}
+
+.comments{
+  margin-bottom: 60px;
+}

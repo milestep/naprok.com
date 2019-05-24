@@ -1,0 +1,25 @@
+<div class="left-nav hiden-sm" id='left-nav'>
+  <a [href]="'#' + (navState.current - 1).toString()" class="top-button">
+    <img src=<%= asset_url("nav-top.png")%>
+      width="20"
+      height="20"
+      tabindex="0"
+      role="button">
+    </img>
+  </a>
+
+  <a [class]="navState.current == '1' ? 'active' : ''" href="#1">01</a>
+  <a [class]="navState.current == '2' ? 'active' : ''" href="#2">02</a>
+  <a [class]="navState.current == '3' ? 'active' : ''" href="#3">03</a>
+  <a [class]="navState.current == '4' ? 'active' : ''" href="#4">04</a>
+  <a [class]="navState.current == '5' ? 'active' : ''" href="#5">05</a>
+
+  <a [href]="'#' + (navState.current + 1).toString()" class="bot-button">
+    <img src=<%= asset_url("nav-bot.png")%>
+    width="20"
+    height="20"
+    tabindex="0"
+    role="button">
+    </img>
+  </a>
+</div>

@@ -1,0 +1,47 @@
+.section-4 {
+  overflow: hidden;
+  background-image: asset_url('back-background-2.png');
+  background-repeat: no-repeat;
+  background-position-y: inherit;
+  font-family: 'Open Sans', sans-serif;
+  background-size: 40%;
+  margin-bottom: 5%;
+
+  .title {
+    color: #000000;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2.56px;
+    margin-bottom: 8%;
+  }
+
+  .head {
+    color: #00e3e6;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10%;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+
+  .body {
+    text-align: justify;
+    color: #777777;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 17.52px;
+    margin-bottom: 30%;
+  }
+
+  .text {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .bg {
+    background-image: asset_url('screning-work.png');
+    background-repeat: no-repeat;
+    height: 610px;
+    background-size: 100%;
+  }
+}

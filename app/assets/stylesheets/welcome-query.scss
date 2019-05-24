@@ -1,0 +1,75 @@
+
+.pull-right {
+  float: right;
+}
+
+.col-1, .col-11, .col-12, .col-16, .col-17, .col-18, .col-19, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10,
+.col-15, .col-22, .col-28,  .col-25, .col-31, .col-32, .col-33, .col-35, .col-43, .col-45, .col-55, .col-65, .col-75, .col-85, .col-95
+{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  float: left;
+}
+
+@media (min-width:1px) and (max-width:991px) {
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .content {
+    width: 50%;
+    margin-left: 0px;
+  }
+  .content-right {
+    width: 100%;
+    margin-left: 10%;
+  }
+}
+@media (min-width:992px){
+  .hiden-sm {
+    display: block;
+  }
+  .container {
+    width: 85%;
+    margin-left: 7.5%;
+    overflow: hidden;
+  }
+  .content {
+    width: 70%;
+    margin-left: 15%;
+    overflow: hidden;
+  }
+  .content-right {
+    width: 70%;
+    margin-left: 20%;
+    overflow: hidden;
+  }
+  .col-1{ width: 10%; }
+  .col-11{ width: 11%; }
+  .col-12{ width: 12%; }
+  .col-15{ width: 15%; }
+  .col-16{ width: 16%; }
+  .col-17{ width: 17%; }
+  .col-18{ width: 18%; }
+  .col-19{ width: 19%; }
+  .col-2{ width: 20%; }
+  .col-22{ width: 22%; }
+  .col-25{ width: 25%; }
+  .col-28{ width: 28%; }
+  .col-3{ width: 30%; }
+  .col-31{ width: 31%; }
+  .col-32{ width: 32%; }
+  .col-33{ width: 33%; }
+  .col-35{ width: 35%; }
+  .col-4{ width: 40%; }
+  .col-43{ width: 43%; }
+  .col-45{ width: 45%; }
+  .col-5{ width: 50%; }
+  .col-55{ width: 55%; }
+  .col-6{ width: 60%; }
+  .col-7{ width: 70%; }
+  .col-8{ width: 80%; }
+  .col-9{ width: 90%; }
+}

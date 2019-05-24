@@ -1,0 +1,139 @@
+.section-2 {
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 5%;
+  background-image: asset_url('back-background-1.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: inherit;
+  background-size: 45%;
+  margin-bottom: 5%;
+
+  .flex-container-menu {
+    display: flex;
+    font-weight: 600;
+    font-size: 1vw;
+    letter-spacing: 1.25px;
+    color: #ffffff;
+    justify-content: center;
+    width: 100%;
+    height: 58px;
+    align-items: end;
+
+    .stripe {
+      float: left;
+      cursor: pointer;
+      text-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      font-weight: 400;
+      line-height: 45.19px;
+      text-transform: uppercase;
+      letter-spacing: 1.19px;
+    }
+
+    .stripe-1 {
+      background-color: #00e3e6;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .stripe-2 {
+      background-color: #00b8ba;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .stripe-3 {
+      background-color: #018e90;
+      width: 40%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .flex-container-tabs {
+    display: flex;
+    padding-top: 5%;
+    height: 530px;
+
+    .background {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 70%;
+      background-position: inherit;
+    }
+
+    .content {
+      box-shadow: 2px 2px 5px rgba(3, 4, 24, 0.16);
+      width: 95%;
+      background-color: #ffffff;
+      z-index: 1;
+      margin-top: 10%;
+      padding: 35px 45px;
+      position: relative;
+      margin-left: 0;
+    }
+
+    .tab-content.text {
+      box-shadow: 2px 2px 5px rgba(3, 4, 24, 0.16);
+      width: 95%;
+      background-color: #ffffff;
+      z-index: 1;
+      padding: 25px 45px;
+      position: relative;
+      margin-left: 0;
+    }
+
+    .who-we-are {
+      background-image: asset_url('for-tabs/who_we_are');
+      z-index: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .why-naprok {
+      background-image: asset_url('for-tabs/why-Naprok');
+      z-index: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .help {
+      background-image: asset_url('for-tabs/our-help');
+      z-index: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .title {
+      letter-spacing: 2.5px;
+      color: #000000;
+      font-size: 2.2vw;
+      font-weight: 700;
+      line-height: 60px;
+    }
+
+    .title-help {
+      letter-spacing:0;
+      color: #000000;
+      font-size: 1.5vw;
+      font-weight: 700;
+      line-height: 60px;
+    }
+
+    .small-text {
+      text-align: justify;
+      padding-top: 3.5%;
+      color: #000000;
+      font-size: 0.8vw;
+      letter-spacing: 0.75px;
+      line-height: 23px;
+      font-weight: 400;
+      margin-bottom: 2%;
+    }
+  }
+}

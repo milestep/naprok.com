@@ -1,0 +1,109 @@
+.section-5 {
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+
+  .left {
+    height: 50vw;
+    background-image: asset_url('6-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bg-form {
+    background-image: asset_url('start-contact.png');
+    background-size: 100%;
+    height: 50vw;
+  }
+
+  .contact-form {
+    margin-left: 13%;
+
+    .head {
+      margin-top: 43%;
+      color: #ffffff;
+      font-size: 2.3vw;
+      font-weight: 400;
+      letter-spacing: 2.5px;
+    }
+
+    .body {
+      margin-top: 1%;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.75px;
+      line-height: 17px;
+      text-align: justify;
+      width: 90%;
+    }
+
+    form {
+      margin-top: 16.5%;
+      border: 0px;
+      font-family: 'Open Sans', sans-serif;
+
+      .text-input {
+        font-family: 'Open Sans', sans-serif;
+        padding: 4%;
+        padding-left: 10%;
+        margin-bottom: 10%;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 31px;
+        border: 2px solid #00e3e6;
+        color: #cfcfcf;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1.02px;
+      }
+
+      .text-input:hover {
+        box-shadow: 0 0 20px rgba(0, 227, 230, 0.2)
+      }
+
+      .submit-input {
+        font-family: 'Open Sans', sans-serif;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1.84px;
+        border-radius: 22px;
+        background-color: #00e3e6;
+        border: 0px;
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+      }
+
+      .submit-input:hover {
+        cursor: pointer;
+      }
+    }
+
+    .alert {
+      position: fixed;
+      padding: 15px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      text-align: center;
+      width: 100%;
+      top: 0;
+      left: 0;
+      font-size: 3vh;
+      font-weight: bold;
+    }
+
+    .success {
+      color: #3c763d;
+      background-color: rgba(223, 240, 216, 0.8);
+      border-color: #d6e9c6;
+    }
+
+    .error {
+      color: #a94442;
+      background-color: rgba(242, 222, 222, 0.8);
+      border-color: #ebccd1;
+    }
+  }
+}

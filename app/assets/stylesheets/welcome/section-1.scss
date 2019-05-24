@@ -1,0 +1,65 @@
+.section-1 {
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+
+  .container-padding {
+    padding-top: 16%;
+  }
+  .padding-bg {
+    margin-top: 9%;
+  }
+
+  .big-text {
+    display: block;
+    color: #6f6f6f;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 4.01px;
+  }
+
+  .small-text {
+    display: block;
+    color: #777777;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 4%;
+    text-align: justify;
+  }
+
+  .talk-button {
+    overflow: hidden;
+    background-color: #00e3e6;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14.33px;
+    letter-spacing: 1.83px;
+    width: 191px;
+    height: 43px;
+    border-radius: 22px;
+    outline: none;
+    border: transparent 0px solid;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+
+  .talk-button:hover {
+    cursor: pointer;
+  }
+
+  .bg {
+    width: 47%;
+    height: 658px;
+  }
+
+  .bg-section {
+    background-image: asset_url('section1-bg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 658px;
+  }
+}

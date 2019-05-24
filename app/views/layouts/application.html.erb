@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> IT Consultancy - Software Development Services - Naprok Blog</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+
+        <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104063296-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-104063296-1');
+</script>
+<!-- Microdata -->
+<script type="application/ld+json">{
+"@context": "http://schema.org",
+"@type": "Blog",
+"name": "Naprok blog",
+"url": "http://naprok.com/blog",
+"description": "Naprok is an IT consultancy offering the full-stack developers from outsourcing vendors to your in-house staff. Our team screens the engineers in advance to provide you with the remote staff who meet all expectation you're looking for",
+"sameAs": [
+"https://www.facebook.com/NaprokOutstaffing/",
+"https://plus.google.com/b/113955821309509306078/?hl=ru",
+"https://www.linkedin.com/company/17920121/",
+"https://twitter.com/NaprokOutstaff"
+],
+
+"publisher": {
+"@type": "Organization",
+"name": "Naprok Outstaffing",
+"logo": {
+"@type": "imageObject",
+"url": "http://naprok.com/assets/logo-f3bae7421dd76b34ed708022347e9dbaa75130fa2d41387e2cbb8988df5575b0.svg"
+}
+}
+}
+]
+}</script>
+    <%= yield :head %>
+</head>
+  <body>
+    <!--
+    <%= render 'shared/alerts' %> -->
+    <%= render 'shared/header' %>
+    <%= yield %>
+    <%= render 'shared/footer' %>
+  </body>
+</html>
